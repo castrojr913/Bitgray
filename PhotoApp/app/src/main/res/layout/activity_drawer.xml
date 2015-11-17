@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jacr.photoapp.controllers.DrawerActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_drawer_toolbar"
+        style="@style/AppTheme.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- This layout will contain the view of each loaded fragment by the FragmentManager -->
+    <RelativeLayout
+        android:id="@+id/activity_drawer_view_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_drawer_toolbar"
+        android:paddingBottom="@dimen/activity_margin_vertical"
+        android:paddingLeft="@dimen/activity_margin_horizontal"
+        android:paddingRight="@dimen/activity_margin_horizontal"
+        android:paddingTop="@dimen/activity_margin_vertical" />
+
+</RelativeLayout>

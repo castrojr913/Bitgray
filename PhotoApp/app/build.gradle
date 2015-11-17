@@ -1,0 +1,58 @@
+// Read this link about Android Annotations: https://bitbucket.org/hvisser/android-apt
+
+repositories {
+    maven { url "https://jitpack.io" } // For Material Dialogs
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt' // For Android Annotations
+
+apt {
+    arguments {
+        resourcePackageName "com.jacr.photoapp"
+        androidManifestFile variant.outputs[0]?.processResources?.manifestFile
+    }
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    defaultConfig {
+        applicationId "com.jacr.photoapp"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    apt "org.androidannotations:androidannotations:3.3.2"
+    compile 'org.androidannotations:androidannotations-api:3.3.2'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.jakewharton.timber:timber:4.1.0' // Print logs with format
+    compile 'com.google.code.gson:gson:2.4' // Parse JSON response
+    compile 'com.squareup.okhttp:okhttp:2.5.0' // Http client
+    // Material Design Style
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'; // EditTexts
+    compile 'com.github.navasmdc:MaterialDesign:1.5@aar' // Buttons, progress bars and others
+    compile('com.mikepenz:materialdrawer:4.3.4@aar') { transitive = true } // Drawer Panel
+    // Gallery
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    // Location: require GPlay 8.1.0
+    compile 'com.google.android.gms:play-services-location:8.1.0'
+    compile 'pl.charmas.android:android-reactive-location:0.8@aar'
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxandroid:0.25.0'
+}

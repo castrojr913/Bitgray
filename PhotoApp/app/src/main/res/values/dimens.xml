@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_margin_horizontal">16dp</dimen>
+    <dimen name="activity_margin_vertical">16dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="app_textsize_h7">28sp</dimen>
+    <!--<dimen name="app_textsize_h8">24sp</dimen>-->
+    <dimen name="app_textsize_h9">20sp</dimen>
+
+    <!-- Progress Bar -->
+    <dimen name="app_progressbar_circular_width">64dp</dimen>
+    <dimen name="app_progressbar_circular_height">64dp</dimen>
+
+    <!-- EditText -->
+    <dimen name="app_edittext_drawable_padding">10dp</dimen>
+
+</resources>

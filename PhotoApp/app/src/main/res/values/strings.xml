@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">PhotoApp</string>
+
+    <!-- Messages (General Purpose) -->
+    <string name="error_connectivity">
+        <![CDATA[There was an error in regard to network status:\n
+        1. Check Wifi / Data ports. Try turning them off and turning them on again.\n
+        2. It may be a trouble with the Service Provider or Network Manager.]]>
+    </string>
+    <string name="error_timeout">The server doesn\'t answer straight away so far, please try later again.</string>
+    <string name="error_webservice">There was an unknown issue. Please, try later again and it still persists, inform the trouble to the support team.</string>
+
+    <!-- Drawer Activity -->
+    <string name="activity_drawer_item_users">Users</string>
+    <string name="activity_drawer_item_photos">Photos</string>
+    <string name="activity_drawer_item_gallery">Gallery</string>
+
+    <!-- Users Fragment -->
+    <string name="fragment_users_progressbar_text">Getting user &#8230;</string>
+    <string name="fragment_users_data_user">
+         <![CDATA[
+         Name: %1$s\n
+         User: %2$s\n
+         Email: %3$s\n
+         Phone: %4$s\n
+         Company: %5$s
+         ]]>
+    </string>
+
+    <!-- Photos Fragment -->
+    <string name="fragment_photos_textview_take_photo">Tap here to take a photo</string>
+    <string name="fragment_photos_edittext_title">Add a title</string>
+    <string name="fragment_photos_edittext_place">Add your location</string>
+    <string name="fragment_photos_button_add">Save Photo</string>
+    <string name="fragment_photos_msg_search_location">Searching location &#8230;</string>
+    <string name="fragment_photos_msg_save_photo_success">The photo has been saved successfully</string>
+    <string name="fragment_photos_error_form_missed_data">Please, fill out the form completely</string>
+    <string name="fragment_photos_error_camera_disabled">Apparently, the device does not support camera to take photos.</string>
+    <string name="fragment_photos_error_take_photo">It is not possible to open the camera in order to take the photo. Try again later.</string>
+    <string name="fragment_photos_error_save_photo">There was an unknown error to save the photo. Try again later.</string>
+    <string name="fragment_photos_error_location">There was an error to fetch your location. Check your ports are enabled.</string>
+    <string name="fragment_photos_error_unavailable_location">There are no a found location.</string>
+    <string name="fragment_photos_error_gps">Check if the GPS is enabled. Your location is needed.</string>
+
+    <!-- Gallery Fragment -->
+    <string name="fragment_gallery_listview_empty">There are no photos to show</string>
+
+    <!-- Gallery Image Activity -->
+    <string name="activity_gallery_image_textview_title">Title: %1$s</string>
+    <string name="activity_gallery_image_textview_location">Location: %1$s</string>
+    <string name="activity_gallery_image_textview_date">Date: %1$s</string>
+    <string name="activity_gallery_image_button_dismiss">Return to Gallery</string>
+
+</resources>

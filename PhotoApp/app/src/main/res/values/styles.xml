@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/app_theme_primary</item>
+        <item name="colorPrimaryDark">@color/app_theme_primary_dark</item>
+        <item name="colorAccent">@color/app_theme_accent</item>
+    </style>
+
+    <!-- Toolbar -->
+
+    <style name="AppTheme.Toolbar">
+        <item name="popupTheme">@style/Theme.AppCompat.NoActionBar</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="android:background">@color/app_toolbar_background</item>
+    </style>
+
+    <!-- Progress Bar -->
+
+    <style name="AppTheme.ProgressBar">
+        <item name="android:background">@color/app_progressbar_background</item>
+    </style>
+
+    <style name="AppTheme.ProgressBar.Circular">
+        <item name="android:layout_width">@dimen/app_progressbar_circular_width</item>
+        <item name="android:layout_height">@dimen/app_progressbar_circular_height</item>
+    </style>
+
+    <!-- EditText -->
+
+    <style name="AppTheme.EditText"></style>
+
+    <style name="AppTheme.EditText.Material">
+        <item name="met_textColor">@color/app_textview_text</item>
+        <item name="met_textColorHint">@color/app_textview_hint</item>
+        <item name="android:drawablePadding">@dimen/app_edittext_drawable_padding</item>
+    </style>
+
+    <!-- Custom Views -->
+
+    <style name="AppTheme.UsersFragment"></style>
+
+    <style name="AppTheme.UsersFragment.Text">
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/app_textsize_h9</item>
+        <item name="android:textColor">@color/app_textview_text</item>
+        <item name="android:lines">10</item>
+    </style>
+
+    <style name="AppTheme.PhotosFragment"></style>
+
+    <style name="AppTheme.PhotosFragment.Tumbnail">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="AppTheme.PhotosFragment.TapHere">
+        <item name="android:textSize">@dimen/app_textsize_h7</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.PhotosFragment.Location">
+        <item name="android:clickable">true</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+
+    <style name="AppTheme.Gallery"></style>
+
+    <style name="AppTheme.Gallery.FullImage"></style>
+
+    <style name="AppTheme.Gallery.FullImage.Text">
+        <item name="android:textSize">@dimen/app_textsize_h9</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="AppTheme.Gallery.ListView">
+        <item name="android:dividerHeight">0dp</item>
+    </style>
+
+    <style name="AppTheme.Gallery.ListView.Empty">
+        <item name="android:textSize">@dimen/app_textsize_h7</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.Gallery.ListView.GridView">
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:columnWidth">120dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:verticalSpacing">6dp</item>
+        <item name="android:numColumns">auto_fit</item>
+        <item name="android:stretchMode">columnWidth</item>
+    </style>
+
+    <style name="AppTheme.Gallery.ListView.GridView.Thumbnail">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="AppTheme.Gallery.ListView.Date">
+        <item name="android:textSize">@dimen/app_textsize_h9</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+
+</resources>

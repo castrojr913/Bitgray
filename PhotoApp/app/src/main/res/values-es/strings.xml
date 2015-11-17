@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">PhotoApp</string>
+
+    <!-- Messages (General Purpose) -->
+    <string name="error_connectivity">
+        <![CDATA[Hubo un error de conectividad:\n
+        1. Verifique los puertos Wifi y/o datos. Intente apagarlos o encenderlos nuevamente.\n
+        2. Puede ser un problema relacionado con el Proveedor de Servicio o Administrador de Red.]]>
+    </string>
+    <string name="error_timeout">El servidor demora para responder, por favor intente de nuevo más tarde.</string>
+    <string name="error_webservice">Hubo un error desconocido. Por favor, intente de nuevo más tarde
+        y si aún persiste contacte al equipo de soporte.</string>
+
+    <!-- Drawer Activity -->
+    <string name="activity_drawer_item_users">Usuarios</string>
+    <string name="activity_drawer_item_photos">Fotos</string>
+    <string name="activity_drawer_item_gallery">Galería</string>
+
+    <!-- Users Fragment -->
+    <string name="fragment_users_progressbar_text">Buscando usuarios &#8230;</string>
+    <string name="fragment_users_data_user">
+         <![CDATA[
+         Nombre: %1$s\n
+         Usuario: %2$s\n
+         Email: %3$s\n
+         Teléfono: %4$s\n
+         Empresa: %5$s
+         ]]>
+    </string>
+
+    <!-- Photos Fragment -->
+    <string name="fragment_photos_textview_take_photo">Presione aquí para iniciar la captura de fotos</string>
+    <string name="fragment_photos_edittext_title">Agregue un título</string>
+    <string name="fragment_photos_edittext_place">Agregue ubicación</string>
+    <string name="fragment_photos_button_add">Guardar</string>
+    <string name="fragment_photos_msg_search_location">Buscando ubicación &#8230;</string>
+    <string name="fragment_photos_msg_save_photo_success">La foto ha sido guardada exitosamente</string>
+    <string name="fragment_photos_error_form_missed_data">Por favor, complete el formulario en su totalidad</string>
+    <string name="fragment_photos_error_camera_disabled">Al parecer, el dispositivo está inhabilitado para tomar fotos.</string>
+    <string name="fragment_photos_error_take_photo">No es posible abrir la cámara para capturar una foto. Intente de nuevo más tarde.</string>
+    <string name="fragment_photos_error_save_photo">Hubo un error desconocido al guardar la foto.</string>
+    <string name="fragment_photos_error_location">Hubo un error para obtener su ubicación. Verifique que los puertos estén activados.</string>
+    <string name="fragment_photos_error_unavailable_location">No se pudo obtener una localización.</string>
+    <string name="fragment_photos_error_gps">Verique que el GPS lo tenga activado. Su ubicación es necesitada.</string>
+
+    <!-- Gallery Fragment -->
+    <string name="fragment_gallery_listview_empty">No hay que fotos para mostrar</string>
+
+    <!-- Gallery Image Activity -->
+    <string name="activity_gallery_image_textview_title">Título: %1$s</string>
+    <string name="activity_gallery_image_textview_location">Ubicación: %1$s</string>
+    <string name="activity_gallery_image_textview_date">Fecha: %1$s</string>
+    <string name="activity_gallery_image_button_dismiss">Regrese a Galería</string>
+
+</resources>

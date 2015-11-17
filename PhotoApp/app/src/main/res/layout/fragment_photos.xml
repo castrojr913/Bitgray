@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/fragment_photos_textview_take_photo"
+        style="@style/AppTheme.PhotosFragment.TapHere"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/fragment_photos_textview_take_photo" />
+
+    <LinearLayout
+        android:id="@+id/fragment_photos_layout_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/fragment_photos_imageview_thumbnail"
+            style="@style/AppTheme.PhotosFragment.Tumbnail"
+            android:layout_margin="5dp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/fragment_photos_edittext_title"
+            style="@style/AppTheme.EditText.Material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/fragment_photos_edittext_title"
+            android:imeOptions="actionDone" />
+
+        <TextView
+            android:id="@+id/fragment_photos_textview_location"
+            style="@style/AppTheme.PhotosFragment.Location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/fragment_photos_edittext_place" />
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/fragment_photos_button_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/fragment_photos_button_add" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
